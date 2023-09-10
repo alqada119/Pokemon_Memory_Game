@@ -1,8 +1,8 @@
 import { useState,useEffect } from "react";
 import "../App.css"
 
-const list_of_pokemon=['ditto','ivysaur','venusaur','bulbasaur','charmander','charmeleon','charizard','squirtle']
-export function API(){
+const list_of_pokemon=['scyther','koffing','diglett','bulbasaur','charmander','doduo','tauros','squirtle']
+export function API(props){
     let [pokemon,setpokemon]=useState('')
     let [pokeimage,setpokemonimg]=useState("Null URL")
     let [list_use,setlist]=useState([])
@@ -21,6 +21,7 @@ export function API(){
                 setpokemon(pokename)
                 setpokemonimg(poke)
                 setlist(prevList => [...prevList, pokename]);
+                
         })}
       
         
@@ -28,7 +29,7 @@ export function API(){
    return (
     <div class="image">
         <img class="img1"src={pokeimage}></img>
-        {pokemon}        
+        {pokemon}       
     </div>
    )
 }
