@@ -3,3 +3,7 @@
 ### Tools Used : HTML,CSS,Javascript
 #### Framework Used: REACT
 ##### Restful API: Poke API
+###### In order to run the Game download everything with Final Version 1 as a message
+###### This APP needs to be run in a react environment 
+
+PS: WIll be deployed soon!
